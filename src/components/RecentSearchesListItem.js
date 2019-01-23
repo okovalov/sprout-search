@@ -1,5 +1,5 @@
 import React from 'react'
-import Moment from 'react-moment'
+import moment from 'moment'
 import {Link} from 'react-router-dom'
 
 const RecentSearchesListItem = (props) => (
@@ -11,9 +11,7 @@ const RecentSearchesListItem = (props) => (
       <h3>{props.description}</h3>
     </Link>
     <p>Created&nbsp;-&nbsp;
-      <Moment fromNow>
-      {props.createdAt}
-    </Moment>&nbsp;
+      {moment(props.createdAt).fromNow()}
       <button onClick={(e) => {
         props.removeSearch({id: props.id})
       }}>X</button>

@@ -158,7 +158,7 @@ class PaginateData extends Component {
     const pages = this.fetchPageNumbers()
     
     return (
-      <Fragment>
+      <div>
         <nav aria-label="PaginateData">
           <div className={"row"}>
             <div className={"columns page-main-container"}>
@@ -213,7 +213,7 @@ class PaginateData extends Component {
           </div>
         
         </nav>
-      </Fragment>
+      </div>
     )
     
   }
