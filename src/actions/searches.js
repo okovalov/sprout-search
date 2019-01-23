@@ -1,5 +1,6 @@
 import uuid from 'uuid'
 import { addResult } from './results'
+import moment from 'moment'
 
 // GET_SEARCH
 export const getSearch = description => {
@@ -32,11 +33,12 @@ export const getSearch = description => {
 }
 
 // ADD_SEARCH
-export const addSearch = ({ description = '',} = {}) => ({
+export const addSearch = ({ description = '', createdAt} = {}) => ({
   type: 'ADD_SEARCH',
   search: {
     id: uuid(),
     description,
+    createdAt: createdAt ? createdAt : moment()
   }
 })
 

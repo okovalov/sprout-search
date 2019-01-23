@@ -111,7 +111,8 @@ class PaginateData extends Component {
       switch (true) {
         // handle: (1) < {5 6} [7] {8 9} (10)
         case (hasLeftSpill && !hasRightSpill): {
-          const extraPages = range(startPage - spillOffset, startPage - 1)
+          const fromRange = startPage - spillOffset
+          const extraPages = range(fromRange, startPage - 1)
           pages = [LEFT_PAGE, ...extraPages, ...pages]
           break
         }
