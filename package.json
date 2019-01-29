@@ -29,7 +29,7 @@
     "enzyme-to-json": "3.0.1",
     "jest": "20.0.4",
     "live-server": "^1.2.0",
-    "moment": "2.18.1",
+    "moment": ">=2.19.3",
     "node-ddg-api": "^0.1.4",
     "node-sass": "^4.11.0",
     "normalize.css": "7.0.0",
@@ -50,7 +50,8 @@
     "style-loader": "0.18.2",
     "uuid": "3.1.0",
     "validator": "^8.0.0",
-    "webpack": "^3.1.0",
-    "webpack-dev-server": "^2.5.1"
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   }
 }
